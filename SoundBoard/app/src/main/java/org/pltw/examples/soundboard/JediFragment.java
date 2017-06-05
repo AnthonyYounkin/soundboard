@@ -35,7 +35,7 @@ public class JediFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_jedi, container, false);
 
-
+//Jedi Buttons
         jedi1 = (Button) rootView.findViewById(R.id.jedi_button1);
         jedi2 = (Button) rootView.findViewById(R.id.jedi_button2);
         jedi3 = (Button) rootView.findViewById(R.id.jedi_button3);
