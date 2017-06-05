@@ -50,6 +50,60 @@ public class JediFragment extends Fragment {
         jedSound5 = MediaPlayer.create(getActivity(), R.raw.theforcewillbewithyou);
         jedSound6 = MediaPlayer.create(getActivity(), R.raw.yoda_whyareyouhere);
 
+        jedi1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                jedSound1.seekTo(0);
+                Log.e(TAG, "Jedi 1 Clicked");
+                jedSound1.start();
+            }
+        });
+
+        jedi2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                jedSound2.seekTo(0);
+                Log.e(TAG, "Jedi 2 Clicked");
+                jedSound2.start();
+            }
+        });
+
+        jedi3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                jedSound3.seekTo(0);
+                Log.e(TAG, "Jedi 3 Clicked");
+                jedSound3.start();
+            }
+        });
+
+        jedi4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                jedSound4.seekTo(0);
+                Log.e(TAG, "Jedi 4 Clicked");
+                jedSound4.start();
+            }
+        });
+
+       jedi5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                jedSound5.seekTo(0);
+                Log.e(TAG, "Jedi 5 Clicked");
+                jedSound5.start();
+            }
+        });
+
+        jedi6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                jedSound6.seekTo(0);
+                Log.e(TAG, "Jedi 6 Clicked");
+                jedSound6.start();
+            }
+        });
+
         return rootView;
     }
 }
