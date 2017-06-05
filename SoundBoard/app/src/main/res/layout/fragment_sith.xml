@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
@@ -60,5 +61,45 @@
         android:layout_below="@+id/vader5"
         android:layout_alignParentStart="true"
         android:onClick="onSith6Click" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emperor 1"
+        android:id="@+id/emperor1"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/vader_obi"
+        android:layout_alignParentStart="true"
+        android:onClick="onSith7Click" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emperor 2"
+        android:id="@+id/emperor2"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/emperor1"
+        android:layout_alignParentStart="true"
+        android:onClick="onSith8Click" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emperor 3"
+        android:id="@+id/emperor3"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/emperor2"
+        android:layout_alignParentStart="true"
+        android:onClick="onSith9Click" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emperor 4"
+        android:id="@+id/emperor4"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/emperor3"
+        android:layout_alignParentStart="true"
+        android:onClick="onSith10Click" />
 
 </LinearLayout>
