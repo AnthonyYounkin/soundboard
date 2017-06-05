@@ -13,8 +13,9 @@ import android.widget.Button;
  * Created by Thomas77843 on 5/19/2017.
  */
 public class SithFragment extends Fragment {
-    private final int WHOLE_NOTE = 1000;
-    public static final String TAG = SithFragment.class.getName();
+
+    private static final String TAG = "tag";
+
     public Button mVader1;
     public Button mVader2;
     public Button mVader3;
@@ -63,79 +64,100 @@ public class SithFragment extends Fragment {
         mEmperor4 = (Button) rootView.findViewById(R.id.emperor4);
         mpE4 = MediaPlayer.create(getActivity(), R.raw.e_willdie);
 
+        //
+        mVader1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mpDV1.seekTo(0);
+                Log.e(TAG, "Sith 1 Clicked");
+                mpDV1.start();
+            }
+        });
+
+
+        mVader2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mpDV2.seekTo(0);
+                Log.e(TAG, "Sith 2 Clicked");
+                mpDV2.start();
+            }
+        });
+
+        mVader3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mpDV3.seekTo(0);
+                Log.e(TAG, "Sith 3 Clicked");
+                mpDV3.start();
+            }
+        });
+
+        mVader4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mpDV4.seekTo(0);
+                Log.e(TAG, "Sith 4 Clicked");
+                mpDV4.start();
+            }
+        });
+
+        mVader5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mpDV5.seekTo(0);
+                Log.e(TAG, "Sith 5 Clicked");
+                mpDV5.start();
+            }
+        });
+        //end vader
+        mVaderObiWan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mpDVOW.seekTo(0);
+                Log.e(TAG, "Sith 6 Clicked");
+                mpDVOW.start();
+            }
+        });
+        //start emperor
+        mEmperor1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mpE1.seekTo(0);
+                Log.e(TAG, "Sith 7 Clicked");
+                mpE1.start();
+            }
+        });
+
+        mEmperor2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mpE2.seekTo(0);
+                Log.e(TAG, "Sith 8 Clicked");
+                mpE2.start();
+            }
+        });
+
+        mEmperor3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mpE3.seekTo(0);
+                Log.e(TAG, "Sith 9 Clicked");
+                mpE3.start();
+            }
+        });
+
+        mEmperor4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mpE4.seekTo(0);
+                Log.e(TAG, "Sith 10 Clicked");
+                mpE4.start();
+            }
+        });
+
+
         return rootView;
 
     }
-
-
-    private void delayPlaying(int delay) throws InterruptedException {
-        try {
-            Thread.sleep(delay);
-        } catch (InterruptedException e) {
-            Log.e("SoundBoard", "Audio playback interrupted");
-        }
-
-    }
-
-    public void onSith1Click(View view) {
-        mpDV1.seekTo(0);
-        Log.e(TAG, "Sith 1 clicked");
-        mpDV1.start();
-    }
-
-    public void onSith2Click(View view) {
-        mpDV2.seekTo(0);
-        Log.e(TAG, "Sith 2 clicked");
-        mpDV2.start();
-    }
-
-    public void onSith3Click(View view) {
-        mpDV3.seekTo(0);
-        Log.e(TAG, "Sith 3 clicked");
-        mpDV3.start();
-    }
-
-    public void onSith4Click(View view) {
-        mpDV4.seekTo(0);
-        Log.e(TAG, "Sith 4 clicked");
-        mpDV4.start();
-    }
-
-    public void onSith5Click(View view) {
-        mpDV5.seekTo(0);
-        Log.e(TAG, "Sith 5 clicked");
-        mpDV5.start();
-    }//end vader
-
-    public void onSith6Click(View view) {
-        mpDVOW.seekTo(0);
-        Log.e(TAG, "Sith 6 clicked");
-        mpDVOW.start();
-    }//start emperor
-
-    public void onSith7Click(View view) {
-        mpE1.seekTo(0);
-        Log.e(TAG, "Sith 7 clicked");
-        mpE1.start();
-    }
-
-    public void onSith8Click(View view) {
-        mpE2.seekTo(0);
-        Log.e(TAG, "Sith 8 clicked");
-        mpE2.start();
-    }
-
-    public void onSith9Click(View view) {
-        mpE3.seekTo(0);
-        Log.e(TAG, "Sith 9 clicked");
-        mpE3.start();
-    }
-
-    public void onSith10Click(View view) {
-        mpE4.seekTo(0);
-        Log.e(TAG, "Sith 10 clicked");
-        mpE4.start();
-    }
-
-
 }
